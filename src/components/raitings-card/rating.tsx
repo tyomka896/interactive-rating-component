@@ -8,7 +8,7 @@ interface Props {
 }
 
 export function Rating({ onDataUpdate }: Props) {
-    const [selected, setSelected] = useState<Grade | null>(null);
+    const [selected, setSelected] = useState<Grade | undefined>(undefined);
 
     const onSubmit = () => {
         onDataUpdate({ grade: selected });
