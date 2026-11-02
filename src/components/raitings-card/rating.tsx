@@ -49,6 +49,7 @@ export function Rating({ onDataUpdate }: Props) {
             <ul className="flex flex-row flex-wrap justify-between gap-2">{grades}</ul>
 
             <button
+                type="button"
                 className="text-grey-900 rounded-full bg-orange-500 py-2.5 font-bold uppercase transition-colors duration-100 hover:bg-white"
                 onClick={onSubmit}
             >

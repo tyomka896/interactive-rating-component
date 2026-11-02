@@ -22,7 +22,7 @@
 
 @layer base {
     html {
-        @apply font-base bg-black/95 text-[15px] text-white;
+        @apply font-base bg-grey-950/98 text-[15px] text-white;
     }
 
     button:not(:disabled),
