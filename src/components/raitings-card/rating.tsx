@@ -11,6 +11,10 @@ export function Rating({ onDataUpdate }: Props) {
     const [selected, setSelected] = useState<Grade | undefined>(undefined);
 
     const onSubmit = () => {
+        if (selected === undefined) {
+            return;
+        }
+
         onDataUpdate({ grade: selected });
     };
 
